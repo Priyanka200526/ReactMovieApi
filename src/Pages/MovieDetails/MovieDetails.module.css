@@ -1,0 +1,38 @@
+
+.moviedetailscontainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moviedetailscontainer img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.moviedetailscontainer h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.moviedetailscontainer p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.moviedetailscontainer button {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.moviedetailscontainer button:hover {
+    background-color: #e5533d;
+}
