@@ -32,7 +32,7 @@ body {
 
 .dark {
   background-color: #353439;
-  color: white;
+  color: rgba(227, 226, 226, 0.938);
   box-shadow: 0 4px 8px rgba(244, 243, 243, 0.19),
     0 6px 20px rgba(246, 239, 239, 0.069);
 }
@@ -57,13 +57,11 @@ body {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #2c2c2c;
 }
 
 /* TEXT */
 .card p {
   font-size: 13px;
-  color: #6b6b6b;
   line-height: 1.5;
 }
 

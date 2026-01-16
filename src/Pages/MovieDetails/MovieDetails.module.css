@@ -1,9 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
 
 .moviedetailscontainer {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.25s ease;
+    min-height: 100vh;
+}
+
+.light {
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+.dark {
+    background-color: #353439;
+    color: white;
+}
+.cardDetails{
+    line-height: 1.8;
+}
+.cardlight {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.carddark {
+    background-color: #353439;
+    color: rgba(245, 245, 245, 0.925);
 }
 
 .moviedetailscontainer img {
@@ -19,7 +56,6 @@
 
 .moviedetailscontainer p {
     font-size: 16px;
-    color: #555;
     margin: 5px 0;
 }
 

@@ -55,6 +55,11 @@ body {
     transition: color 0.2s ease;
 }
 
+.navbar h2 {
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
 .navbar a:hover {
     color: #ff6347;
     /* Tomato color on hover */
