@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Navbar from './Components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import MovieDetails from './Pages/MovieDetails/MovieDetails'
 import Favorites from './Pages/Favorites/Favorites'
+import Nav from './Components/nav/Nav'
 const App = () => {
   const Favlocaldata = JSON.parse(localStorage.getItem("fav-item")) || []
   const [favitem, setfavitem] = useState(Favlocaldata)
@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Nav/>
       <Routes>
         <Route path="/" element={<Home favitem={favitem} setfavitem={setfavitem} favlist={favlist} />} />
         <Route

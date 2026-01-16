@@ -1,4 +1,14 @@
 .homecontainer {
     padding: 20px;
+    transition: all 0.3s ease;
 }
 
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: #242329;
+    color: white;
+}

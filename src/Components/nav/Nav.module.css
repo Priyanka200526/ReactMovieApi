@@ -15,9 +15,36 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   background-color: cadetblue;
+    background-color: cadetblue;
     padding: 15px 30px;
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+.light {
+    background-color: cadetblue;
+    color: black;
+}
+
+.dark {
+    background-color: #242329;
+    color: white;
+}
+
+.navbar button {
+    border: none;
+    font-size: 25px;
+       transition: all 0.3s ease;
+}
+
+.light button {
+    background-color: cadetblue;
+    color: black;
+}
+
+.dark button {
+    background-color: #242329;
+    color: white;
 }
 
 .navbar a {
@@ -31,9 +58,4 @@ body {
 .navbar a:hover {
     color: #ff6347;
     /* Tomato color on hover */
-}
-
-.navbar h1 {
-    font-size: 24px;
-    font-weight: 700;
 }

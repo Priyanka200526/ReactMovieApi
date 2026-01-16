@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from './Movielist.module.css'
+import { ThemeContext } from '../../Components/Contextapi/ThemecontextApi'
 const Movielist = ({ moviedata, favlist }) => {
     let navigate = useNavigate()
+    let { Theme } = useContext(ThemeContext)
     return (
         <div className={styles.movielistcontainer}>
             {moviedata.map((item) => (
-                <div key={item.id} className={styles.card}>
+                <div key={item.id} className={`${styles.card} ${Theme ? styles.light : styles.dark} `}>
                     {item.poster_path ? (
                         <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt="" width="200" />
                     ) : (
