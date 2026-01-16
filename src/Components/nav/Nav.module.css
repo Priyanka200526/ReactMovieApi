@@ -34,7 +34,7 @@ body {
 .navbar button {
     border: none;
     font-size: 25px;
-       transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .light button {
