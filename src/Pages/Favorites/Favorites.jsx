@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Favorites.module.css'
+import { ThemeContext } from '../../Components/Contextapi/ThemecontextApi'
 const Favorites = ({ deletefavitem, favitem }) => {
+  let { Theme } = useContext(ThemeContext)
   return (
-    <div className={styles.favoritescontainer}>
+    <div className={`${styles.favoritescontainer} ${Theme ? styles.light : styles.dark}`}>
       <h1>My Favorites Movies</h1>
       {favitem.map((item, idx) => (
         <div key={idx} className={styles.favcard}>
